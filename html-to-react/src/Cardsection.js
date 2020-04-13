@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Card from './Card'
+
 const Cardsection = () => (
     <section className="contact bg-success ">
       <div className="container ">
@@ -8,55 +10,22 @@ const Cardsection = () => (
         </h2>
         <div className="row">
           <div className="col-4">
-            <div className="card" style={{width: "18rem"}}>
-              <img
-                src="https://images.pexels.com/photos/3532557/pexels-photo-3532557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" className="btn btn-success">Go somewhere</a>
-              </div>
-            </div>
+            <Card 
+              title = "First Title"
+              button = "First Button"
+            />
           </div>
           <div className="col-4">
-            <div className="card" style={{width: "18rem"}}>
-              <img
-                src="https://images.pexels.com/photos/3532544/pexels-photo-3532544.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" className="btn btn-success">Go somewhere</a>
-              </div>
-            </div>
+          <Card 
+            title = "Second Title"
+            button = "Second Button"
+          />
           </div>
           <div className="col-4">
-            <div className="card" style = {{width: "18rem"}}>
-              <img
-                src="https://images.pexels.com/photos/2522663/pexels-photo-2522663.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" className="btn btn-success">Go somewhere</a>
-              </div>
-            </div>
+          <Card 
+            title = "Third Title"
+            button = "Third Button"
+          />
           </div>
         </div>
       </div>
